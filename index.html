@@ -11,11 +11,21 @@
   <link rel="apple-touch-icon" href="rent.png">
   <link rel="icon" href="rent.png">
   <style>
-    html, body { margin: 0; height: 100%; background: #fff; }
-    iframe { border: 0; width: 100%; height: 100%; display: block; }
+    body { font-family: -apple-system, sans-serif; text-align: center; padding: 3rem 1rem; }
+    a { display: inline-block; margin-top: 1rem; padding: .8rem 1.4rem; background: #1a73e8; color: #fff; border-radius: 8px; text-decoration: none; }
   </style>
+  <script>
+    var APP_URL = 'https://script.google.com/macros/s/AKfycbw7e_cpYlNAbAAtx_uRcnvLqYWAT-t_Fa2ss5743AXN0qVDbs0j0tpHRA5gs735fT4dGw/exec';
+
+    // Launched from the home screen: go straight to the app.
+    if (window.navigator.standalone === true) {
+      window.location.replace(APP_URL);
+    }
+  </script>
 </head>
 <body>
-  <iframe src="https://script.google.com/macros/s/AKfycbw7e_cpYlNAbAAtx_uRcnvLqYWAT-t_Fa2ss5743AXN0qVDbs0j0tpHRA5gs735fT4dGw/exec" allow="clipboard-write"></iframe>
+  <h2>Ottawa Rentals</h2>
+  <p>Tap Share, then Add to Home Screen.</p>
+  <a href="https://script.google.com/macros/s/AKfycbw7e_cpYlNAbAAtx_uRcnvLqYWAT-t_Fa2ss5743AXN0qVDbs0j0tpHRA5gs735fT4dGw/exec">Open app now</a>
 </body>
 </html>
